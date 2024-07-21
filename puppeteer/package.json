@@ -1,0 +1,17 @@
+{
+  "name": "puppeteer",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha tests/**/*.test.js --timeout 900000"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "mocha": "^10.7.0",
+    "puppeteer": "^22.13.1",
+    "puppeteer-core": "^22.13.1"
+  }
+}

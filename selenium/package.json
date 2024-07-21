@@ -1,0 +1,15 @@
+{
+  "name": "selenium",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "npx mocha tests/**/*.test.js --timeout 900000"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "assert": "^2.1.0",
+    "mocha": "^10.7.0",
+    "selenium-webdriver": "^4.23.0"
+  }
+}

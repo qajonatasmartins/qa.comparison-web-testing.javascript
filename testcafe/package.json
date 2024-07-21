@@ -1,0 +1,12 @@
+{
+  "name": "testcafe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "testcafe chrome ./tests/**.js"
+  },
+  "devDependencies": {
+    "testcafe": "^3.6.2"
+  }
+}

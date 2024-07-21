@@ -1,0 +1,16 @@
+{
+  "name": "nightwatchjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch ./nightwatch/examples",
+    "test-basic": "nightwatch ./nightwatch/examples/basic/ecosia.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nightwatch": "^3.7.0"
+  }
+}
