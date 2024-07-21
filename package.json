@@ -1,0 +1,42 @@
+{
+  "name": "qa.comparison-web-testing.javascript",
+  "version": "1.0.0",
+  "description": "Projeto para comparação de testes entre frameworks em js",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "@babel/core": "^7.24.9",
+    "@babel/preset-env": "^7.24.8",
+    "@babel/register": "^7.24.6",
+    "@wdio/local-runner": "^8.39.1",
+    "@wdio/mocha-framework": "^8.39.0",
+    "@wdio/spec-reporter": "^8.39.0",
+    "testcafe": "^3.6.2",
+    "@playwright/test": "^1.45.2",
+    "@types/node": "^20.14.11",
+    "nightwatch": "^3.7.0",
+    "@codeceptjs/configure": "^1.0.1",
+    "@codeceptjs/examples": "^1.2.4",
+    "@codeceptjs/ui": "^1.2.0",
+    "codeceptjs": "^3.6.4",
+    "playwright": "^1.45.2"
+  },
+  "dependencies": {
+    "assert": "^2.1.0",
+    "mocha": "^10.7.0",
+    "selenium-webdriver": "^4.23.0",
+    "puppeteer": "^22.13.1",
+    "puppeteer-core": "^22.13.1"
+  },
+  "scripts": {
+    "webdriverio": "wdio run ./webdriverio/wdio.conf.js",
+    "testcafe": "testcafe chrome ./testcafe/tests/**.js",
+    "selenium": "npx mocha ./selenium/tests/**/*.test.js --timeout 900000",
+    "puppeteer": "npx mocha ./puppeteer/**/*.test.js --timeout 900000",
+    "playwright": "playwright test",
+    "nightwatch": "nightwatch ./nightwatch/tests/examples/basic/ecosia.js",
+    "codeceptjs": "codeceptjs run --steps"
+  },
+  "author": "",
+  "license": "ISC"
+}
